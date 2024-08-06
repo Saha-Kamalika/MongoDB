@@ -3,6 +3,15 @@
 ### USING COLLECTION
 use collection_name
 
+### CREATING COLLECTION
+db.createCollection('collection_name')
+
+### DROP COLLECTION
+db.collection_name.drop()
+
+### DROP DATABASE
+db.dropDatabase()
+
 ### INSERTING SINGLE DATA IN DOCUMENT
 db.document_name.insertOne({object})
 
