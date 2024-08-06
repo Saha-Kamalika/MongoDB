@@ -18,6 +18,11 @@ db.document_name.insertOne({object})
 ### INSERTING MULTIPLE DATA IN DOCUMENT
 db.document_name.insertMany([{object1}, {object2}])
 
+📍 
+### ORDERED & UNORDERED INSERTS: determines the batch behaviour
+By default : ordered (MongoDB stops after encountering an error)<br>
+unordered (continues to perform the write operations): db.col_name([],{ordered: false})
+
 ### FILTERING DOCUMENTS
 db.document_name.find({property_name: value})
 
