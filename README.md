@@ -19,3 +19,8 @@ db.document_name.find({property_name: value})
 ### OPERATORS & COMPLEX QUERIES
 - **Using $gte, $lte, $or**: db.shop.find({$or: [{price: {$lte: 100}}, {price: {$gte: 100}}]})
 - **Using $in, $nin**: db.shop.find({product: {$in: ["notebook","crayons"]})
+
+### UPDATING DOCUMENTS
+- **using $set**:  db.doc_name.updateOne({_id: object_id}, {$set: {key: value}})
+- **using $inc**:  db.doc_name.updateOne({_id: object_id}, {$inc: {key: increment_val}})
+- using $pull & $push:  db.doc_name.updateOne({_id: object_id}, {$pull: {key: value}}) //operates ony on arrays
