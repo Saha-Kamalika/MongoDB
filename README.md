@@ -26,7 +26,10 @@
 ### IMPORTING AND EXPORTING JSON FILES
 * in root directory: mongoimport json_file_path -d db_name -c collection_name
 * in root directory: mongoexport -d db_name -c collection_name -o json_file_path
-  
+
+### USING EXPRESSIONS IN COMMANDS
+* db.col_name.find({$expr: {$gt: [{$multiply: ['$field1','$field2']},'field3']}})
+
 ### FILTERING DOCUMENTS
 * db.document_name.find({property_name: value})
 
