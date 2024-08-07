@@ -23,6 +23,16 @@
 * unordered (continues to perform the write operations): db.col_name([],{ordered: false})
 ![unordered](https://64.media.tumblr.com/33a083038b2190aa3472bf90112a7b23/tumblr_inline_piugntirwg1ravvkk_1280.png)
 
+### CURSOR METHODS
+* count()
+* limit()
+* skip()
+* sort()
+
+### ELEMENT OPERATORS
+* $exists
+* $type
+  
 ### IMPORTING AND EXPORTING JSON FILES
 * in root directory: mongoimport json_file_path -d db_name -c collection_name
 * in root directory: mongoexport -d db_name -c collection_name -o json_file_path
