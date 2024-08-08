@@ -55,3 +55,7 @@
 - **using $set**:  db.doc_name.updateOne({_id: object_id}, {$set: {key: value}})
 - **using $inc**:  db.doc_name.updateOne({_id: object_id}, {$inc: {key: increment_val}})
 - using $pull & $push:  db.doc_name.updateOne({_id: object_id}, {$pull: {key: value}}) //operates ony on arrays
+
+### REMOVING AND RENAMING FIELDS IN DOCUMENTS
+* db.col_name.updateOne({filter}, {$unset: {fieldName: 1}})
+* db.col_name.updateOne({filter}, {$rename: {oldFieldName: newFieldName}})
