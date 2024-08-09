@@ -59,3 +59,7 @@
 ### REMOVING AND RENAMING FIELDS IN DOCUMENTS
 * db.col_name.updateOne({filter}, {$unset: {fieldName: 1}})
 * db.col_name.updateOne({filter}, {$rename: {oldFieldName: newFieldName}})
+
+### DELETING DOCUMENTS
+* db.col_name.deleteOne({filter})
+* db.col_name.deleteMany({filter})
