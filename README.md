@@ -63,3 +63,8 @@
 ### DELETING DOCUMENTS
 * db.col_name.deleteOne({filter})
 * db.col_name.deleteMany({filter})
+
+### INDEXES
+* db.col_name.createIndex({fieldName: 1})
+* db.col_name.getIndexes()
+* db.col_name.dropIndex({fieldName: 1})
