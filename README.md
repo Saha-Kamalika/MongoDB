@@ -68,3 +68,7 @@
 * db.col_name.createIndex({fieldName: 1})
 * db.col_name.getIndexes()
 * db.col_name.dropIndex({fieldName: 1})
+
+### AGGREGATION
+* db.col_name.aggregate({$match: {query}})
+* db.col_name.aggregate([{$group: {_id: '$fieldName'}, varname: {$sum: 1}}])
