@@ -25,7 +25,7 @@
 
 ### CURSOR METHODS
 * count()
-* limit()
+* limit() 
 * skip()
 * sort()
 
