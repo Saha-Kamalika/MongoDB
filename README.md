@@ -1,7 +1,7 @@
 # MongoShell Commands 
  
 ### USING COLLECTION
-* use collection_name
+* use collection_name 
 
 ### CREATING COLLECTION
 * db.createCollection('collection_name')
