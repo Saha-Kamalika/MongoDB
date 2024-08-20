@@ -72,3 +72,4 @@
 ### AGGREGATION
 * db.col_name.aggregate({$match: {query}})
 * db.col_name.aggregate([{$group: {_id: '$fieldName'}, varname: {$sum: 1}}])
+* db.col_name.aggregate([{$project: {fieldName: 1, 'varName': {$filter: {input: '$fieldName', as: 'alias', cond: {$gt: ['$$alias', value]}}}}}}])
