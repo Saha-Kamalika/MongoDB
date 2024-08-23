@@ -3,7 +3,7 @@
 ### USING COLLECTION
 * use collection_name 
  
-### CREATING COLLECTION
+### CREATING COLLECTION 
 * db.createCollection('collection_name')
 
 ### DROP COLLECTION
